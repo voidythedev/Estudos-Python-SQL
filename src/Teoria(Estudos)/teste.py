@@ -12,7 +12,7 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS contas_bancarias (
         )""")
 
 cursor.execute ("""INSERT INTO contas_bancarias (titular, saldo, cpf) VALUES
-                ('Pedro', 5600.00, '132.456.789-00')""")
+                ('Miguel', 5600.00, '132.455.789-00')""")
 
 cursor.execute("""SELECT * FROM contas_bancarias""")
 contas = cursor.fetchall()
