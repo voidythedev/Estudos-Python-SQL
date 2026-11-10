@@ -1,4 +1,5 @@
 import sqlite3 
+import tkinter as tk
 
 conexao = sqlite3.connect('banco_loja.db')
 cursor = conexao.cursor() #Cursor é o Menssageiro
