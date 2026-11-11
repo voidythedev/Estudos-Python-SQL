@@ -21,6 +21,7 @@ def cadastrar_produto():
 
     cursor.execute("INSERT INTO produtos (nome, preco, estoque) VALUES (?, ?, ?)", (nome_produtos, preco_produtos, estoque_produtos))
     conexao.commit()
+    
 def listar_produtos():
     cursor.execute("""SELECT nome, preco, estoque FROM produtos""")
     produtos = cursor.fetchall()
